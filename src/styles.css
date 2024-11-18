@@ -1,0 +1,225 @@
+/* Global styles */
+body {
+  font-family: 'Poppins', sans-serif; /* Modern sans-serif font */
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Light background for an eye-friendly experience */
+  color: #333; /* Dark gray text for better readability */
+  box-sizing: border-box;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #f98b88, #ffc566); /* Soft gradient with pastel tones */
+  color: #fff;
+  padding: 60px 20px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  font-family: 'Poppins', sans-serif; /* Clean and bold font */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.header .logo-container {
+  margin-bottom: 20px;
+}
+
+.header .logo {
+  width: 180px; /* Logo width */
+  height: auto;
+  margin: 0 auto;
+}
+
+.header h1 {
+  font-size: 3.5rem;
+  font-weight: 700; /* Bold for emphasis */
+  letter-spacing: 2px; /* Slightly increase the spacing for a modern feel */
+  margin: 0;
+  text-transform: uppercase; /* Uppercase for a bolder look */
+}
+
+.header p {
+  font-size: 1.3rem;
+  font-weight: 300; /* Lighter weight for a contrast */
+  margin-top: 10px;
+  letter-spacing: 1px; /* Slight spacing between letters */
+  color: #f0f0f0; /* Soft white for contrast */
+}
+
+/* Muscle group buttons */
+.muscle-group-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.muscle-group-buttons button {
+  margin: 0 15px;
+  padding: 18px 30px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  background-color: #ff6f61; /* Gentle red-pink tone */
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.muscle-group-buttons button:hover {
+  background-color: #ff8c00;
+  transform: scale(1.05); /* Subtle scale effect */
+}
+
+.muscle-group-buttons button.active {
+  background-color: #ff8c00; /* Highlight active button */
+}
+
+/* Search Bar */
+.search-bar input {
+  padding: 14px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 5px;
+  border: none;
+  width: 80%;
+  max-width: 450px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  color: #333; /* Dark text for readability */
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for input box */
+}
+
+.search-bar input::placeholder {
+  color: #aaa;
+}
+
+/* Exercise List */
+.exercise-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Exercise Card */
+.exercise-card {
+  background-color: #ffffff; /* White background for cards */
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #e0e0e0; /* Soft border for a subtle appearance */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.exercise-card:hover {
+  transform: translateY(-5px); /* Gentle hover effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Exercise Quote */
+.exercise-quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #ff6f61;
+  margin-top: 15px;
+  background-color: rgba(255, 111, 97, 0.1); /* Soft background */
+  padding: 12px;
+  border-radius: 8px;
+  letter-spacing: 0.5px;
+}
+
+.exercise-quote p {
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Favorite button */
+.favorite-btn {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #ff6f61;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.favorite-btn:hover {
+  color: #ff8c00;
+}
+
+.favorite-btn.active {
+  color: #ff8c00;
+}
+
+/* Favorites Button */
+.favorites-button button {
+  padding: 18px 35px;
+  background-color: #ff6f61; /* Soft red tone */
+  color: white;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: 500;
+}
+
+.favorites-button button:hover {
+  background-color: #ff8c00;
+  transform: scale(1.05); /* Subtle hover effect */
+}
+
+/* Motivational Section */
+.motivational-section {
+  background-image: url("https://via.placeholder.com/1500x500/ff6f61/ffffff?text=Push+Your+Limits"); /* Add background image related to fitness */
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+  font-family: 'Impact', sans-serif;
+  border-radius: 10px;
+}
+
+.motivational-section h2 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.motivational-section p {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Transition and Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out;
+}
