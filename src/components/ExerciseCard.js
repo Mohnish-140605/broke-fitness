@@ -12,17 +12,13 @@ const ExerciseCard = ({ exercise, toggleFavorite, isFavorite, onClick }) => {
       <img src={exercise.gifUrl} alt={exercise.name} />
       <h3>{exercise.name}</h3>
       <p>Target: {exercise.target}</p>
-      
-      {/* Display sets and reps */}
       <p>
         <strong>Sets:</strong> {exercise.sets || "3"} | <strong>Reps:</strong> {exercise.reps || "12"}
       </p>
-
-      {/* Heart icon for favorite */}
       <button
         className={`favorite-btn ${isFavorite ? "active" : ""}`}
         onClick={(e) => {
-          e.stopPropagation(); // Prevent click on the card
+          e.stopPropagation(); 
           toggleFavorite(exercise);
         }}
       >
