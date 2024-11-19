@@ -19,7 +19,7 @@ const App = () => {
     setLoading(true);
     try {
       const response = await axios.get(
-        `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${muscleGroup}`,
+        `https://exercisedb.p.rapidapi.com/exercises/bodyPart/ ${muscleGroup}`,
         {
           headers: {
             "X-RapidAPI-Key": "7a984bc490mshe428653f32d4137p1126a7jsn6e4347bcd9cd", 
@@ -139,3 +139,6 @@ const App = () => {
 };
 
 export default App;
+
+
+//this is being changed for pushing it again to the github repo
